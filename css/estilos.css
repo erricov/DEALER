@@ -1,0 +1,73 @@
+/* -- HEADER -- */
+.navbar {
+	margin-bottom: 0;
+}
+
+
+.jumbotron{
+	background: #1FA11F;
+	color: white;
+	padding: 20px 0px;
+}
+
+.stroke {
+text-shadow: -2px -2px 1px #000, 2px 2px 1px #000, -2px 2px 1px #000, 2px -2px 1px #000;
+}
+
+.navbar-inverse .navbar-brand {
+    color: #4CCF19;
+}
+
+
+/* -- POST -- */
+
+.main {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.post {
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+	border-bottom: 1px solid #999;
+}
+
+.post .post-title a {
+	color: #333;
+}
+
+.post .thumb {
+	margin-right: 10px;
+	width: 40%;
+}
+
+.post .thumb img {
+	width: 100%;
+}
+
+.post .contenedor-botones {
+	width: 100%;
+}
+.list-group-item.active, .list-group-item.active:focus, .list-group-item.active:hover {
+	background-image: linear-gradient(to bottom,#333 0,#5cb85c 100%);
+}
+
+.btn-success {
+	background-image: linear-gradient(to bottom,#333 0,#5cb85c 100%);
+}
+
+.contenedor-botones  .btn-primary {
+	background-image: linear-gradient(to bottom,#333 0,#333 100%);
+	    border-color: #4bcf1b;
+	        color: #1fa11f;
+    background-color: #323232
+}
+
+/* -- Media Querie --*/
+@media screen and (max-width: 768px) {
+	.post .thumb {
+		width:  100%;
+		margin-bottom: 20px;
+		margin-right: 0; 
+	}
+}
