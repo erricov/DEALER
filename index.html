@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" ng-app="myApp">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -10,7 +10,8 @@
 	
 
 </head>
-<body>
+<body ng-controller="myCtrl">
+
 	<header>
 		<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
 			<div class="container">
@@ -101,10 +102,18 @@
 						</p>
 
 						<div class="contenedor-botones">
-							<a href="#" class="btn btn-primary">Leer mas</a>
+							<a href="#" class="btn btn-primary" ng-click="showWindow();">Leer mas</a>
 							<a href="#" class="btn btn-success">Comentarios <span class="badge">3</span></a>
 						</div>
+
+
 					</article>
+
+					<div class="container articulo" ng-show="mostrarArticulo">
+						{{prueba}}
+					</div>
+
+					
 
 					<article class="post clearfix">
 						<a href="#" class="thumb pull-left">
